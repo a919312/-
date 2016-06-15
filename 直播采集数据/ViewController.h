@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-
-
++ (void) copyDataFromYUVPixelBuffer:(CVPixelBufferRef)pixelBuffer toBuffer:(unsigned char*)buffer;
++ (NSData *)dataWithYUVPixelBuffer:(CVPixelBufferRef)pixelBuffer;
 @end
 
